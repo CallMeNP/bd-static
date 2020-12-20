@@ -1,0 +1,281 @@
+@charset "UTF-8";
+::-webkit-scrollbar {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  -webkit-border-radius: 100px;
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 100px;
+}
+
+.bdr-panel {
+  position: fixed;
+  height: 100%;
+  left: 2rem;
+  top: 0;
+  overflow-y: auto;
+  font-size: 0.8rem;
+  background-color: #f0f0f0;
+}
+
+.bdr-navigator {
+  position: fixed;
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 2rem;
+}
+
+.tab-pane {
+  padding: 1rem;
+}
+
+.nav-pills .nav-link {
+  background-color: #6c757d;
+  color: #f0f0f0;
+  border-radius: 0.25rem 0 0 0.25rem;
+}
+
+@media (max-width: 768px) {
+  .bdr-navigator {
+    position: fixed;
+    height: 2rem;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+
+  .bdr-panel {
+    position: fixed;
+    height: 100%;
+    left: 0;
+    top: 2rem;
+    overflow-y: auto;
+    font-size: 0.8em;
+    background-color: #f0f0f0;
+  }
+
+  .nav-pills .nav-link {
+    background-color: #6c757d;
+    color: #f0f0f0;
+    border-radius: 0.25rem 0.25rem 0 0;
+  }
+}
+.bdr-navigator .nav-link {
+  padding: 0.25rem 0.5rem;
+}
+
+.nav-pills .nav-link.active {
+  background-color: #f0f0f0;
+  color: black;
+}
+
+.nav-switcher {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+}
+
+svg.bi {
+  width: 1rem;
+  height: 1rem;
+}
+
+/**
+.popover {
+    background-color: black;
+}
+.bs-popover-right>.arrow::after{
+    border-right-color: black;
+
+}
+.popover-body{
+    color: #fff;
+}
+
+ */
+.bdr-breadcrumb {
+  margin-bottom: 4rem;
+}
+
+.bdr-neighbors {
+  max-width: 33.6rem;
+}
+.bdr-neighbors a, .bdr-neighbors a:hover, .bdr-neighbors span {
+  color: gray;
+}
+.bdr-neighbors.bdr-top {
+  border-bottom: 1px solid #6c757d;
+}
+.bdr-neighbors.bdr-bottom {
+  border-top: 1px solid #6c757d;
+}
+
+/*
+ * style.css
+ * Copyright (C) 2020 np
+ *
+ * Distributed under terms of the MIT license.
+ */
+.content {
+  max-width: 28em;
+  min-height: 25em;
+  padding-top: 2em;
+  font-family: Tinos, "Hiragino Mincho ProN", "Source Han Serif", "Source Han Serif TC", "Noto Serif CJK", "Noto Serif TC", "Noto Serif SC", Songti, "LiSong Pro", "Apple LiSung", 新細明體, 新细明体, PMingLiU, 細明體, 细明体, MingLiU, serif, NSimSun, FangSong, SimSun, Serif;
+  font-weight: 400;
+  letter-spacing: 0.07em;
+  font-style: normal !important;
+  font-size: 1.2rem;
+}
+
+.content h2 {
+  margin: 1em 0;
+}
+
+.书名 {
+  border-bottom: double;
+}
+
+.地名 {
+  border-bottom: 1px dashed;
+}
+
+.人名 {
+  border-bottom: 1px solid;
+}
+
+.时间 {
+  border-bottom: 1px dotted;
+}
+
+.人名, .书名, .地名, .时间 {
+  border-color: gray;
+}
+
+.时间 + .时间, .书名 + .书名, .人名 + .人名, .地名 + .地名 {
+  margin-left: 1px;
+}
+
+p {
+  text-indent: 2em;
+  line-height: 1.6;
+}
+
+.n, .note, .注释 {
+  font-size: 0.8em;
+  color: darkslateblue;
+}
+
+.落款 {
+  text-align: right;
+}
+
+span.出处 {
+  font-size: 0.8em;
+  color: gray;
+}
+
+span.夹注 {
+  font-size: 0.8em;
+  color: gray;
+}
+
+div.颂 * {
+  text-indent: 0;
+  white-space: pre-line;
+  text-align: center;
+}
+
+i {
+  font-style: normal;
+}
+
+.outline {
+  overflow-y: auto;
+  overflow-x: visible;
+}
+
+.outline > ul {
+  word-break: keep-all;
+  white-space: nowrap;
+}
+.outline > ul li {
+  display: none;
+}
+.outline > ul li a {
+  cursor: pointer;
+}
+.outline > ul > li, .outline > ul li.active li {
+  display: list-item;
+}
+.outline > ul li.inode {
+  list-style: url("/assets/bootstrap-icons-1.1.0/plus.svg");
+}
+.outline > ul li.inode:hover {
+  list-style: url("/assets/bootstrap-icons-1.1.0/plus-circle.svg");
+}
+.outline > ul li.inode.active {
+  list-style: url("/assets/bootstrap-icons-1.1.0/dash.svg");
+}
+.outline > ul li.inode.active:hover {
+  list-style: url("/assets/bootstrap-icons-1.1.0/dash-circle.svg");
+}
+.outline > ul li:not(.inode) {
+  list-style: url("/assets/bootstrap-icons-1.1.0/dot.svg");
+  cursor: default;
+}
+.outline > ul li:not(.inode):hover {
+  list-style: url("/assets/bootstrap-icons-1.1.0/dot.svg");
+}
+
+/**
+ * side note
+ */
+/*Marginal Notes on Desktop*/
+    aside,
+.aside, .n {
+  display: inline;
+  float: right;
+  position: relative;
+  width: 10rem;
+  margin-right: -12rem;
+  font-size: 0.8em;
+  color: gray;
+  background: #fdfdfd;
+  clear: both;
+  border-left: 1px solid gray;
+}
+
+/*Marginal Notes on mobile*/
+@media (max-width: 768px) {
+  /* applies when screen width is under 768 */
+  aside, .aside, .n {
+    /* works for "aside" tag and class name "aside" */
+    display: block;
+    /* forces parent paragraph to break */
+    float: left;
+    /* stops content from floating */
+    margin: 1px;
+    /* adds indentation on all sides */
+    width: 100%;
+    /* forces width of the marginal note */
+    font-size: 15px;
+    /* makes font slightly smaller */
+    color: red;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
