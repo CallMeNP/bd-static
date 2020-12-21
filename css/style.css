@@ -73,6 +73,10 @@
     color: #f0f0f0;
     border-radius: 0.25rem 0.25rem 0 0;
   }
+
+  .bdr-nav-bar.bdr-top {
+    margin-top: 2rem;
+  }
 }
 .bdr-navigator .nav-link {
   padding: 0.25rem 0.5rem;
