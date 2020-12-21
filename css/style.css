@@ -222,23 +222,23 @@ i {
   display: list-item;
 }
 .outline > ul li.inode {
-  list-style: url("/assets/bootstrap-icons-1.1.0/plus.svg");
+  list-style: url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.2.1/icons/plus.svg");
 }
 .outline > ul li.inode:hover {
-  list-style: url("/assets/bootstrap-icons-1.1.0/plus-circle.svg");
+  list-style: url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.2.1/icons/plus-circle.svg");
 }
 .outline > ul li.inode.active {
-  list-style: url("/assets/bootstrap-icons-1.1.0/dash.svg");
+  list-style: url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.2.1/icons/dash.svg");
 }
 .outline > ul li.inode.active:hover {
-  list-style: url("/assets/bootstrap-icons-1.1.0/dash-circle.svg");
+  list-style: url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.2.1/icons/dash-circle.svg");
 }
 .outline > ul li:not(.inode) {
-  list-style: url("/assets/bootstrap-icons-1.1.0/dot.svg");
+  list-style: url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.2.1/icons/dot.svg");
   cursor: default;
 }
 .outline > ul li:not(.inode):hover {
-  list-style: url("/assets/bootstrap-icons-1.1.0/dot.svg");
+  list-style: url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.2.1/icons/dot.svg");
 }
 
 /**
